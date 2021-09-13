@@ -1,10 +1,10 @@
-import React from "react";
 import Gallery from "../components/Gallery";
+import image from "../assets/images/astellas/1-logo.png";
 
 const data = [
   {
     id: 0,
-    url: 'https://picsum.photos/seed/picsum/600/600'
+    url: image
   },
   {
     id: 1,
@@ -19,6 +19,7 @@ const data = [
 const Home = () => {
   return (
     <>
+        <img src="image" alt="" />
       <Gallery items={data} />
     </>
   );
