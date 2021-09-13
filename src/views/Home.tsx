@@ -1,17 +1,14 @@
+import { useContext, useEffect } from 'react';
 import Images from '../assets/images';
 import Gallery from "../components/Gallery";
-
-const data = [
-  {
-    id: 1,
-    coverImage: Images.keewatinCover6
-  },
-];
+import { GalleryContext } from '../store/context';
 
 const Home = () => {
+  const context = useContext(GalleryContext)
+
   return (
     <>
-      <Gallery items={data} />
+      <Gallery items={context.map(item => ({id: item.id, url: item.coverImage}))} />
     </>
   );
 };

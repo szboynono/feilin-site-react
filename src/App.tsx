@@ -9,24 +9,27 @@ import {
 } from "react-router-dom";
 import Home from './views/Home';
 import About from './views/About';
+import GalleryContextProvider from './store/context';
 
 function App() {
 
   return (
-    <Router>
-      <div className="App font-manrope container mx-auto">
-        <Header />
-        <Switch>
-            <Route path="/about">
-              <About />
-            </Route>
-            <Route path="/">
-              <Home />
-            </Route>
-        </Switch>
-        <Footer />
-      </div>
-    </Router>
+    <GalleryContextProvider>
+      <Router>
+        <div className="App font-manrope container mx-auto">
+          <Header />
+          <Switch>
+              <Route path="/about">
+                <About />
+              </Route>
+              <Route path="/">
+                <Home />
+              </Route>
+          </Switch>
+          <Footer />
+        </div>
+      </Router>
+    </GalleryContextProvider>
   )
 }
 
