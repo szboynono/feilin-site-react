@@ -10,6 +10,7 @@ import {
 import Home from './views/Home';
 import About from './views/About';
 import GalleryContextProvider from './store/context';
+import Detail from './views/Detail';
 
 function App() {
 
@@ -21,6 +22,9 @@ function App() {
           <Switch>
               <Route path="/about">
                 <About />
+              </Route>
+              <Route path="/detail/:id">
+                <Detail />
               </Route>
               <Route path="/">
                 <Home />

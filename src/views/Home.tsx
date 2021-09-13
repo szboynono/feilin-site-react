@@ -1,5 +1,4 @@
-import { useContext, useEffect } from 'react';
-import Images from '../assets/images';
+import { useContext } from 'react';
 import Gallery from "../components/Gallery";
 import { GalleryContext } from '../store/context';
 

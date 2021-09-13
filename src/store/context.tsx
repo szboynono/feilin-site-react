@@ -2,7 +2,7 @@ import React from 'react';
 import Images from '../assets/images';
 
 const defaultValue = [{
-  id: 1,
+  id: '1',
   coverImage: Images.keewatinCover6
 }]
 
