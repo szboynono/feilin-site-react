@@ -6,7 +6,7 @@ const Header = () => {
 
 
   return (
-      <nav className="grid grid-cols-3 font-extrabold">
+      <nav className="grid grid-cols-3 gap-8 font-extrabold">
         <h1 className="justify-self-start">
           <Link to="/">FEILIN DESIGN</Link>
         </h1>
